@@ -1,11 +1,11 @@
 # TeekoGameWithArdunio
 ## Program Description
 
-• project.c – this is the main file that contains the event loop and examples of how timebased events are implemented. You should read and understand this file.
-• game.h/game.c – this file contains the implementation of the board used to store the state 
-of the game and the position of the cursor. You should read this file and understand what 
-representation is used for the board state and the cursor position. You will need to modify 
-this file to add required functionality.
+### project.c 
+  this is the main file that contains the event loop and examples of how timebased events are implemented. 
+### game.h/game.c 
+  this file contains the implementation of the board used to store the state of the game and the position of the cursor. You should read this file and understand what 
+  representation is used for the board state and the cursor position. You will need to modify this file to add required functionality.
 • display.h/display.c – this file contains the implementation for displaying the current state 
 of the board. This file contains useful functions for displaying the board to the LED matrix 
 (internal students) or the terminal display (external students). This file contains the same 

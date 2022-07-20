@@ -35,7 +35,10 @@ The game consists of two phases, referred to in this document as game phase 1 an
 ### timer0.h/timer0.c 
   sets up a timer that is used to generate an interrupt every millisecond and update a global time value that is used to time various game events
   
-  
-  
-  
+# Program Features
+## Move Cursor with Buttons
+  B3 = left, B2 = right, B1 = up, B0 = down
+  If the cursor moves off the display, it wrap around to the opposite side. For example, if the cursor is at space (3,4) and attempts to move upwards, it wrap to the     bottom to (3,0).
+## Move Cursor with Terminal Input
+  pressing ‘w’/‘W’ moves the cursor upwards, ‘a’/‘A’ moves the cursor to the left, ‘s’/‘S’ moves the cursor downwards and ‘d’/‘D’ moves the cursor to the right.
   

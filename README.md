@@ -1,4 +1,20 @@
 # TeekoGameWithArdunio
+# Teeko Description
+This project involves creating a replica of the board game ‘Teeko’. Teeko is a turn-based game 
+played between two players on a 5x5 board. Each player has a set of 4 coloured pieces (green for 
+player 1, red for player 2) they must take turns placing on the board. A player wins the game if 
+they manage to place all of their pieces in a line (which may be a diagonal, vertical or horizontal 
+line). Note that these lines do not wrap around the edges of the board.
+The game consists of two phases, referred to in this document as game phase 1 and game phase 2.
+
+  1. In game phase 1, the two players take turns placing their 4 pieces on the board. These 
+  pieces may be placed on any empty space on the board. This phase ends when all 8 pieces 
+  (4 green pieces + 4 red pieces) have been placed on the board.
+  2. In game phase 2, players take turns picking up one of their pieces and moving it to one of 
+  the adjacent empty spaces. An adjacent space is one of the 8 surrounding spaces but does 
+  not wrap around the edges of the board. A piece cannot be placed in the same space it was 
+  picked up.
+
 ## Program Description
 
 ### project.c 
@@ -12,8 +28,6 @@
 ### serialio.h/serialio.c 
   this file is responsible for handling serial input and output using interrupts. It also maps the C standard IO routines (e.g. printf() and fgetc()) to use the serial 
   interface so you are able to use printf() etc for debugging purposes if you wish.
-### spi.h/spi.c (IN Students only) 
-  this file encapsulates all SPI communication. Note that by default, all SPI communication uses busy waiting (i.e. polling) – the “send” routine returns only when the     data is sent. If you need the CPU cycles for other activities, you may wish to consider converting this to interrupt based IO, similar to the way that serial IO is       handled.
 ### terminalio.h/terminalio.c 
   this encapsulates the sending of various escape sequences which enable some control over terminal appearance and text placement – you can call these functions        (declared in terminalio.h) instead of remembering various escape sequences. Additional information about terminal IO will be provided on the course Blackboard site.
 ### timer0.h/timer0.c 

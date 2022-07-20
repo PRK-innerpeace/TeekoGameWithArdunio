@@ -14,6 +14,8 @@ The game consists of two phases, referred to in this document as game phase 1 an
   the adjacent empty spaces. An adjacent space is one of the 8 surrounding spaces but does 
   not wrap around the edges of the board. A piece cannot be placed in the same space it was 
   picked up.
+  
+<img width="487" alt="image" src="https://user-images.githubusercontent.com/67783915/179915450-2a05d89d-3bfb-46f9-90d1-cf9c99c71237.png">
 
 ## Program Description
 
@@ -32,3 +34,8 @@ The game consists of two phases, referred to in this document as game phase 1 an
   this encapsulates the sending of various escape sequences which enable some control over terminal appearance and text placement – you can call these functions        (declared in terminalio.h) instead of remembering various escape sequences. Additional information about terminal IO will be provided on the course Blackboard site.
 ### timer0.h/timer0.c 
   sets up a timer that is used to generate an interrupt every millisecond and update a global time value that is used to time various game events
+  
+  
+  
+  
+  
